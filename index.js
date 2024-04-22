@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 const port ="4444";
 
-mongoose.connect("mongodb+srv://yashpal:Rathore8@cluster0.ctozy2t.mongodb.net/sample").then(()=>{
+mongoose.connect("mongodb+srv://"username":"password"@cluster0.ctozy2t.mongodb.net/"databasename").then(()=>{
 console.log("DB connected ")
 }).catch(error=>{
     console.log("Db Error:", error)
